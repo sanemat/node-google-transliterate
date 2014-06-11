@@ -2,8 +2,8 @@
   "name": "google-transliterate",
   "description": "The best module ever.",
   "version": "0.0.0",
-  "homepage": "https://github.com/sanemat/google-transliterate",
-  "bugs": "https://github.com/sanemat/google-transliterate/issues",
+  "homepage": "https://github.com/sanemat/node-google-transliterate",
+  "bugs": "https://github.com/sanemat/node-google-transliterate/issues",
   "license": "MIT",
   "main": "lib/google-transliterate.js",
   "author": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanemat/google-transliterate"
+    "url": "https://github.com/sanemat/node-google-transliterate"
   },
   "keywords":[],
   "dependencies": {},
