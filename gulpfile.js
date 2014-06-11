@@ -39,4 +39,3 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['test']);
 gulp.task('test', ['lint', 'istanbul']);
-
