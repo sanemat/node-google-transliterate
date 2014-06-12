@@ -1,12 +1,12 @@
 'use strict';
 
 var googleTransliterate = require('../lib/google-transliterate.js');
-var assert = require('should');
+var assert = require('assert');
 
 describe('googleTransliterate', function () {
 
   it('should be awesome', function () {
-    googleTransliterate.awesome().should.equal('awesome');
+    assert(googleTransliterate.awesome(), 'awesome');
   });
 
 });
