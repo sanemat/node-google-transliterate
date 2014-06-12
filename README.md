@@ -3,6 +3,10 @@
 
 The best module ever.
 
+## Note
+  - Important: The Google Transliteration API has been officially deprecated as of May 26, 2011.
+  - https://developers.google.com/transliterate/?hl=ja
+  - https://developers.google.com/transliterate/v1/getting_started?hl=ja
 
 ## Install
 
