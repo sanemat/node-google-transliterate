@@ -18,6 +18,7 @@
   "dependencies": {},
   "devDependencies": {
     "coveralls": "^2.10.0",
+    "espower-loader": "^0.7.1",
     "gulp": "^3.6.2",
     "gulp-istanbul": "^0.2.0",
     "gulp-jscs": "^0.5.0",
@@ -25,7 +26,9 @@
     "gulp-load-plugins": "^0.5.1",
     "gulp-mocha": "^0.4.1",
     "gulp-plumber": "^0.6.2",
-    "jshint-stylish": "^0.2.0"
+    "intelli-espower-loader": "^0.1.0",
+    "jshint-stylish": "^0.2.0",
+    "power-assert": "^0.7.2"
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
