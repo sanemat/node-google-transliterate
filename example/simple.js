@@ -1,6 +1,6 @@
 /*
  * google-transliterate
- * https://github.com/sanemat/google-transliterate
+ * https://github.com/sanemat/node-google-transliterate
  *
  * Copyright (c) 2014 sanemat
  * Licensed under the MIT license.
