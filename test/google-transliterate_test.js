@@ -1,7 +1,7 @@
 'use strict';
 
 var googleTransliterate = require('../lib/google-transliterate.js');
-var assert = require('assert');
+var assert = require('power-assert');
 
 describe('googleTransliterate', function () {
   it('should transliterate', function (done) {
