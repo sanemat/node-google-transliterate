@@ -7,7 +7,7 @@ var nock = require('nock');
 describe('googleTransliterate', function () {
   it('should transliterate', function (done) {
     nock('https://www.google.com')
-      .get('/transliterate?langpair=ja-Hira|ja&text=かんだ')
+      .get('/transliterate?langpair=ja-Hira|ja&text=' + encodeURI('かんだ'))
       .replyWithFile(200, __dirname + '/kanda.json');
     googleTransliterate.transliterate('かんだ', 'ja-Hira', 'ja', function(err, transliteration){
       assert.deepEqual(transliteration, [ [ 'かんだ', [ '神田', '噛んだ', '勘だ', 'かんだ', 'HOOOOOO' ] ] ]);
@@ -17,7 +17,7 @@ describe('googleTransliterate', function () {
 
   it('should transliterate multi literal', function (done) {
     nock('https://www.google.com')
-      .get('/transliterate?langpair=ja-Hira|ja&text=おあややおやにおあやまり')
+      .get('/transliterate?langpair=ja-Hira|ja&text=' + encodeURI('おあややおやにおあやまり'))
       .replyWithFile(200, __dirname + '/oayaya.json');
     googleTransliterate.transliterate('おあややおやにおあやまり', 'ja-Hira', 'ja', function(err, transliteration){
       assert.deepEqual(transliteration,
