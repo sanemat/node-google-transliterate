@@ -25,6 +25,22 @@ var googleTransliterate = require('../lib/google-transliterate.js');
 googleTransliterate.transliterate('かんだ', 'ja-Hira', 'ja', function(err, transliteration){
   transliteration = [ [ 'かんだ', [ '神田', '噛んだ', '勘だ', 'かんだ', '鑑だ' ] ] ];
 });
+
+googleTransliterate.transliterate('おあややおやにおあやまり', 'ja-Hira', 'ja', function(err, transliteration){
+  transliteration = [ [ 'おあやや', [ 'お文や', 'おあやや', 'お彩や', 'お綾や', 'Guuuuuuuu' ] ],
+    [ 'おやに', [ '親に', 'おやに', 'オヤに', 'お屋に', 'お矢に' ] ],
+    [ 'おあやまり', [ 'お誤り', 'お謝り', 'おあやまり', 'オアヤマリ', 'ｵｱﾔﾏﾘ' ] ] ];
+});
+
+googleTransliterate.transliterateFirst('かんだ', 'ja-Hira', 'ja', function(err, transliteration){
+  transliteration = { original: ['かんだ'], result: ['神田'] };
+});
+
+googleTransliterate.transliterateFirst('おあややおやにおあやまり', 'ja-Hira', 'ja', function(err, transliteration){
+  transliteration = { original: ['おあやや', 'おやに', 'おあやまり'], result: ['お文や', '親に', 'お誤り'] };
+});
+
+
 // //www.google.com/transliterate?langpair=ja-Hira|ja&text=%E3%81%B8%E3%82%93%E3%81%8B%E3%82%93&jsonp=?
 // //www.google.com/transliterate?langpair=ja-Hira|ja&jsonp=?
 //google.language.transliterate(["Namaste"], "en", "hi", function(result) {
