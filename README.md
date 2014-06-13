@@ -1,7 +1,7 @@
 # google-transliterate
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
 
-Google Transliterate API for Node.js
+Non-official Google Transliterate API for Node.js
 
 ## Note
   - Important: The Google Transliteration API has been officially deprecated as of May 26, 2011.

@@ -1,6 +1,6 @@
 {
   "name": "google-transliterate",
-  "description": "Google Transliterate API for Node.js.",
+  "description": "Non-official Google Transliterate API for Node.js.",
   "version": "0.0.0",
   "homepage": "https://github.com/sanemat/node-google-transliterate",
   "bugs": "https://github.com/sanemat/node-google-transliterate/issues",
