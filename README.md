@@ -1,12 +1,12 @@
 # google-transliterate
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
 
-The best module ever.
+Google Transliterate API for Node.js
 
 ## Note
   - Important: The Google Transliteration API has been officially deprecated as of May 26, 2011.
-  - https://developers.google.com/transliterate/?hl=ja
-  - https://developers.google.com/transliterate/v1/getting_started?hl=ja
+  - https://developers.google.com/transliterate/
+  - https://developers.google.com/transliterate/v1/getting_started
   - http://www.google.co.jp/ime/cgiapi.html
 
 ## Install
@@ -20,13 +20,15 @@ $ npm install --save google-transliterate
 
 ```javascript
 var googleTransliterate = require('google-transliterate');
-googleTransliterate.awesome(); // "awesome"
+
+googleTransliterate.transliterate('おあややおやにおあやまり', 'ja-Hira', 'ja', function(err, transliteration){
+  transliteration = [
+    [ 'おあやや', [ 'お文や', 'おあやや', 'お彩や', 'お綾や', 'オアヤヤ' ] ],
+    [ 'おやに', [ '親に', 'おやに', 'オヤに', 'お屋に', 'お矢に' ] ],
+    [ 'おあやまり', [ 'お誤り', 'お謝り', 'おあやまり', 'オアヤマリ', 'ｵｱﾔﾏﾘ' ] ]
+  ];
+});
 ```
-
-## API
-
-_(Coming soon)_
-
 
 ## Contributing
 
@@ -35,8 +37,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-_(Nothing yet)_
-
+0.1.0 release
 
 ## License
 
