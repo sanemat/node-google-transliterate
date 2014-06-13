@@ -18,7 +18,9 @@
     "test": "test/"
   },
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "jsonp-client": "^0.5.1"
+  },
   "devDependencies": {
     "coveralls": "^2.10.0",
     "espower-loader": "^0.7.1",
@@ -31,6 +33,7 @@
     "gulp-plumber": "^0.6.2",
     "intelli-espower-loader": "^0.1.0",
     "jshint-stylish": "^0.2.0",
+    "nock": "^0.34.1",
     "power-assert": "^0.7.2"
   },
   "scripts": {
