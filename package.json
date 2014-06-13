@@ -19,6 +19,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "URIjs": "^1.13.2",
     "jsonp-client": "^0.5.1"
   },
   "devDependencies": {
